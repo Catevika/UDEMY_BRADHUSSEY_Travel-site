@@ -12,7 +12,7 @@
 <body>
   <header>
     <img src="assets/images/icons/clear-view-escapes.svg">
-    <a href="#">Get in Touch</a>
+    <a href="#" class="btn">Get in Touch</a>
     <nav>
       <ul>
         <li><a href="#our-beginning">Our Beginning</a></li>
@@ -23,11 +23,25 @@
   </header>
 
   <div class="large-hero">
-    <img src="assets/images/hero--large.jpg">
-    <h1>Your clarity.</h1>
-    <h2>One trip away.</h2>
-    <p>We create soul restoring journeys that inspire you to be you.</p>
-    <p><a href="#">Get Started Today</a></p>
+    <picture>
+      <source srcset='assets/images/hero--large.jpg 1920w, assets/images/hero--large-hi-dpi.jpg 3840w'
+        alt='Coastal view of ocean and mountains' media=' (min-width: 1380px)' />
+      <source srcset='assets/images/hero--medium.jpg 1380w, assets/images/hero--medium-hi-dpi.jpg 2760w'
+        alt='Coastal view of ocean and mountains' media=' (min-width: 990px)' />
+      <source srcset='assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w'
+        alt='Coastal view of ocean and mountains' media='(min-width: 640px)' />
+      <img srcset="assets/images/hero--smaller.jpg 640w, assets/images/hero--smaller-hi-dpi.jpg 1280w"
+        alt='Coastal view of ocean and mountains'>
+    </picture>
+
+    <div class="large-hero__text-content">
+      <div class="wrappper">
+        <h1 class="large-hero__title">Your clarity.</h1>
+        <h2 class="large-hero__subtitle">One trip away.</h2>
+        <p class="large-hero__description">We create soul restoring journeys that inspire you to be you.</p>
+        <p><a href="#" class="btn btn--orange btn--large">Get Started Today</a></p>
+      </div>
+    </div>
   </div>
 
   <div id="our-beginning">
@@ -45,7 +59,8 @@
       dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum
-      <strong>dolore eu fugiat.</strong></p>
+      <strong>dolore eu fugiat.</strong>
+    </p>
   </div>
 
   <div id="features">
@@ -100,7 +115,7 @@
   </div>
 
   <footer>
-    <p>Copyright &copy; 2019 Clear View Escapes. All rights reserved. <a href="#">Get in Touch</a></p>
+    <p>Copyright &copy; 2019 Clear View Escapes. All rights reserved. <a href="#" class="btn btn--orange">Get in Touch</a></p>
   </footer>
   <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
   <div class="modal">
@@ -120,6 +135,7 @@
     <div class="modal__close">X</div>
   </div>
   This is the end of the "modal" reference HTML -->
+  <script src='bundled.js'></script>
 </body>
 
 </html>
