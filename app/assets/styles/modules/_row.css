@@ -14,10 +14,18 @@
 
 		&__medium-4 {
 			width: 33.33%;
+
+			&--larger {
+				width: 37%;
+			}
 		}
 
 		&__medium-8 {
 			width: 66.66%;
+
+			&--smaller {
+				width: 63%;
+			}
 		}
 	}
 }
