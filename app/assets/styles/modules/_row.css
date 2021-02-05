@@ -1,0 +1,23 @@
+.row {
+	display: block;
+	&--gutters {
+		margin-right: -65px;
+	}
+
+	&--gutters > div {
+		padding-right: 65px;
+	}
+
+	@mixin atMedium {
+		display: flex;
+		overflow: hidden;
+
+		&__medium-4 {
+			width: 33.33%;
+		}
+
+		&__medium-8 {
+			width: 66.66%;
+		}
+	}
+}
