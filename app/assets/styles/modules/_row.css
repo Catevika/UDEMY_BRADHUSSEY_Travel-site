@@ -8,9 +8,17 @@
 		padding-right: 65px;
 	}
 
+	&__b-margin-until-medium {
+		margin-bottom: 1rem;
+	}
+
 	@mixin atMedium {
 		display: flex;
 		overflow: hidden;
+
+		&__b-margin-until-medium {
+			margin: 0;
+		}
 
 		&__medium-4 {
 			width: 33.33%;
