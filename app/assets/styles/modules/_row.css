@@ -61,8 +61,36 @@
 		}
 	}
 
-	&--equal-height-at-medium {
-		@mixin atMedium {
+	@mixin atLarge {
+		display: flex;
+
+		&__b-margin-until-large {
+			margin: 0;
+		}
+
+		&__large-4 {
+			width: 33.33%;
+
+			&--larger {
+				width: 37%;
+			}
+		}
+
+		&__large-6 {
+			width: 50%;
+		}
+
+		&__large-8 {
+			width: 66.66%;
+
+			&--smaller {
+				width: 63%;
+			}
+		}
+	}
+
+	&--equal-height-at-large {
+		@mixin atLarge {
 			display: flex;
 		}
 
