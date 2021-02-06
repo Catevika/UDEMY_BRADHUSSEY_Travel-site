@@ -1,11 +1,16 @@
 .row {
-	display: block;
+	position: relative;
+
 	&--gutters {
 		margin-right: -65px;
 	}
 
 	&--gutters-large {
 		margin-right: -100px;
+	}
+
+	&--gutters-small {
+		margin-right: -45px;
 	}
 
 	&--gutters > div {
@@ -16,13 +21,20 @@
 		padding-right: 100px;
 	}
 
+	&--gutters-small > div {
+		padding-right: 45px;
+	}
+
+	&--t-padding {
+		padding-top: 80px;
+	}
+
 	&__b-margin-until-medium {
 		margin-bottom: 1rem;
 	}
 
 	@mixin atMedium {
 		display: flex;
-		overflow: hidden;
 
 		&__b-margin-until-medium {
 			margin: 0;
@@ -46,6 +58,16 @@
 			&--smaller {
 				width: 63%;
 			}
+		}
+	}
+
+	&--equal-height-at-medium {
+		@mixin atMedium {
+			display: flex;
+		}
+
+		& > div {
+			display: flex;
 		}
 	}
 }
