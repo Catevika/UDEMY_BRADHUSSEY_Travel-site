@@ -36,9 +36,13 @@
 	}
 
 	&--last {
-		margin-bottom: 98px;
+		margin-bottom: 0;
 
-		@mixin atSmall {
+		@mixin atMedium {
+			margin-bottom: 98px;
+		}
+
+		@mixin atLarge {
 			margin-bottom: 0;
 		}
 	}
