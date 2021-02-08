@@ -8,7 +8,6 @@
 	ul {
 		margin: 0;
 		padding: 0;
-		clear: both;
 	}
 
 	li {
@@ -17,8 +16,6 @@
 		padding-right: 7px;
 
 		@mixin atMedium {
-			display: block;
-			float: left;
 			padding-right: 20px;
 		}
 
@@ -44,12 +41,6 @@
 			padding: 12px 0;
 			font-size: 1rem;
 			background-color: transparent;
-		}
-	}
-
-	&--pull-right {
-		@mixin atMedium {
-			float: right;
 		}
 	}
 }
