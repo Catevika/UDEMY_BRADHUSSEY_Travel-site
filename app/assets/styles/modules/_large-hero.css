@@ -4,12 +4,15 @@
 
 	&__text-content {
 		position: absolute;
-		top: 50%;
+		top: 55%;
 		transform: translateY(-50%);
 		left: 0;
 		width: 100%;
-		margin-top: 63px;
 		text-align: center;
+
+		@mixin atSmall {
+			top: 50%;
+		}
 	}
 
 	&__title {
