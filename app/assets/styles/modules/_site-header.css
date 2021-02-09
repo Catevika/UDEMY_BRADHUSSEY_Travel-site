@@ -33,6 +33,7 @@
 		padding: 25px 36px;
 
 		@mixin atMedium {
+			top: 0;
 			left: 0;
 			transform: translateX(0);
 			padding: 13px 29px;
