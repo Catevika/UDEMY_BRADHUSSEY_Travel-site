@@ -1,5 +1,3 @@
-const myPassword = process.env.PASSWORD;
-
 exports.handler = function (event, context, callback) {
 	const secretContent = `
 		<h3>Welcome to the secret area</h3>
@@ -13,7 +11,7 @@ exports.handler = function (event, context, callback) {
 		body = {};
 	}
 
-	if (body.password == myPassword) {
+	if (body.password == 'javascript') {
 		callback(null, {
 			statusCode: 200,
 			body: secretContent
