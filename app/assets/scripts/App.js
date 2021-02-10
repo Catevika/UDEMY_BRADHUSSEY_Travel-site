@@ -1,9 +1,20 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import MyAmazingComponent from './modules/MyAmazingComponent';
+
 import '../styles/styles.css';
 import 'lazysizes';
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import StickyHeader from './modules/StickyHeader';
 import ClientArea from './modules/ClientArea';
+
+// REACT code related
+
+ReactDOM.render(
+	<MyAmazingComponent />,
+	document.querySelector('#my-react-example')
+);
 
 new StickyHeader();
 
